@@ -35,9 +35,10 @@ To consider the possibility of not having access to location data, a debatable d
   
 If it seems a tad confusing the image found in the "Resources" folder, under the label of "Local Weather App Page Possibilities.png" might increase the understanding of the overly-convoluted structure.
 
+
 Given this structure, it is therefore necessary to design three different pages, even if consistent in style. An extremely rudimentary mockup of the three can be found again in the Resources folder, under the respective labels of "Introductory Page", "Location not Available" and "Location Available".
 
-For the background images found in the different mockups, and the background images ultimately referenced in the webpage, a reference to a images on [Pexels](https://www.pexels.com/) is made.
+Background images for the project are found on [Pexels](https://www.pexels.com/), simply searching for weather keywords.
 
 
 ## Technical Implementation
@@ -145,7 +146,7 @@ Through a JSON call it is possible to reference the url https://fcc-weather-api.
 
 ```js
 function getWeather() {
-  var url = "https://fcc-weather-api.glitch.me/api/current?lat=35&lon=139;
+  var url = "https://fcc-weather-api.glitch.me/api/current?lat=35&lon=139";
   $.getJSON(url, function(json) {
     console.log(json);
   });
@@ -167,13 +168,13 @@ And, for our limited use case, provides valuable information under the following
 
 Simple enough.
 
-For our particular end case, the final, marginal step is to include the latitude and longitude retrieved through the previous chunk of code. It is possible to input as parameters the values obtained from the position object, directly in the JSON function 
+For our particular end case, the final, marginal step is to include the latitude and longitude retrieved through the previous chunk of code. It is possible to input as parameters the values obtained from the position object, directly in the JSON function:
 
 ```js
 function getWeather(latitude, longitude) {}
 ```
 
-and include their presence in the url through string concatenation
+and include their presence in the url through string concatenation:
 
 ```js
 var url = "https://fcc-weather-api.glitch.me/api/current?lat=" + latitude + "&lon=" + longitude;
