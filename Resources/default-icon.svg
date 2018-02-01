@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="16.404mm"
+   height="16.404mm"
+   version="1.1"
+   viewBox="0 0 16.404 16.404"
+   id="svg16"
+   sodipodi:docname="defaulticon.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata22">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs20">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath80">
+      <circle
+         id="circle82"
+         r="8.2020998"
+         cy="122.82"
+         cx="97.470001"
+         style="fill:#b3b3b3;stroke-width:0.21798" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     id="namedview18"
+     showgrid="false"
+     inkscape:zoom="3.8064904"
+     inkscape:cx="31.000056"
+     inkscape:cy="30.9925"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g14" />
+  <g
+     transform="translate(-89.268 -114.62)"
+     id="g14">
+    <circle
+       cx="97.47"
+       cy="122.82"
+       r="8.2021"
+       id="circle2"
+       stroke-width=".21798"
+       fill="#b3b3b3" />
+    <g
+       id="g12"
+       fill="#4d4d4d"
+       clip-path="url(#clipPath80)">
+      <path
+         d="m92.136 125.95 7.2788 8.4233 10.767-2.8828-8.6863-7.7508z"
+         id="path4"
+         fill-opacity=".32161" />
+      <rect
+         x="91.607"
+         y="122.94"
+         width="11.159"
+         height="3.5413"
+         rx="1.6"
+         id="rect6"
+         stroke-width=".26458" />
+      <circle
+         cx="95.115"
+         cy="122.44"
+         r="2.9734"
+         id="circle8"
+         stroke-width=".26458" />
+      <circle
+         cx="98.856"
+         cy="122.11"
+         r="3.7084"
+         id="circle10"
+         stroke-width=".32999" />
+    </g>
+  </g>
+</svg>

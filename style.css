@@ -1,0 +1,188 @@
+/*
+import font
+  sigmar for the introductory content
+  roboto for the  weather content
+*/
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One|Roboto:100');
+
+/*
+box sizing border box to consider border and padding in the computation of each element's height
+*/
+* {
+  box-sizing: border-box;
+}
+
+/*
+for the body
+    occupy 100% of the width, plus the entirety of the vertical viewport
+    hide vertical overflow to remove the sidebar scrolling
+    margin and padding to nil
+    text align to right
+    background covering the entirety of the page by centering the image
+    (using: background-image, size, position, repeat)
+    transition to allow fade in between images
+*/
+body {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  background-image: url(https://static.pexels.com/photos/150274/pexels-photo-150274.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: background-image 0.8s ease;
+}
+
+/*
+for the content of the first page
+    display inline block to cover the width of the content only
+    font family to the imported font
+    text align to center (which centers the text on the right section of the page, as per body text-align to right)
+    color for the entire text to #fff
+    margin to stop the text from touching the border of the page
+*/
+.introductory-content {
+  display: inline-block;
+  font-family: 'Sigmar One', cursive;
+  text-align: center;
+  color: #fff;
+  margin: 1.5rem;
+}
+
+/*
+for the headers in the first page
+    uppercase every word
+    add a double text shadow to give a width to the text
+*/
+.introductory-content h1, .introductory-content h2 {
+  text-transform: uppercase;
+  text-shadow: 2px 2px #333, 3px 3px #bbb;
+}
+/*
+for the first header
+      increase relative size
+*/
+.introductory-content h1 {
+  font-size: 2.5rem;
+}
+
+/*
+for the second header
+    change cursor to pointer to make it evidently clickable
+    display inline-block to make only the text clickable (otherwise the header is a block spanning the entire width of its container)
+    transition for the hovering animation
+*/
+.introductory-content h2 {
+  cursor: pointer;
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+/*
+for the hovering transition
+    increase scale and rotate the Z and Y coordinate
+*/
+.introductory-content h2:hover {
+  transform: scale(1.1,1.1) rotateZ(-25deg) rotateY(12deg);
+}
+
+/*
+for the words styled in the header
+  add text decoration
+  increase relative size even more
+*/
+.text-underline {
+  text-decoration: underline;
+  font-size: 1.6em;
+}
+
+/*
+for the *disclaimer paragraph
+    stick the text to the bottom and to the right
+    increase size ever so slightlly
+    make the text bold
+    change font family
+    capitalize each word
+    animation to make the text disappear after a twelve second delay, which is more than enough for the reader to retrieve such information
+*/
+.disclaimer {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  text-shadow: 0 0 #000;
+  animation: disclaimer-disappear 2s 12s forwards;
+}
+/*
+animation for the disclaimer, to go from opacity 1 to 0
+and to go from visibility visible to hidden (otherwise you can still interact with the element, even if transparent)
+*/
+@keyframes disclaimer-disappear {
+  from {
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/*
+for the content of the second page
+    hide content (TO BE FADED IN WITH JQUERY)
+    position absolute to locate the information in the top right section of the page
+    background to a rounded rectangle, slightly opaque
+    text align left (aligned to the right of the page as per body)
+    increase margin and padding
+    change font family to the font imported for second
+    color to a remotely transparent white
+    weight to bold text
+    text to uppercase
+    with a slight shadow
+*/
+.weather-content {
+  display: none;
+  position: absolute;
+  top: 1.7rem;
+  right: 1.7rem;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 2rem 2.5rem;
+  text-align: left;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(255,255,255,0.8);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: -2px -1px rgba(255,255,255,0.2);
+}
+/*
+for the icon in the container
+    size of an appropriate icon
+*/
+.weather-content img {
+  width: 62px;
+  height: 62px;
+  margin-right: 1rem;
+}
+/*
+for the temperature in the container
+    increase size sizeably
+    add cursor to make it evidently clickable (toggle between celsius and farenheit)
+*/
+.weather-temperature {
+  font-size: 4em;
+  cursor: pointer;
+}
+/*
+for the text in the container
+    increase size, but noticeably less then the temperature
+*/
+.weather-location, .weather-separator, .weather-main {
+  font-size: 2em;
+}
