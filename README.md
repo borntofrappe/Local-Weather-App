@@ -4,7 +4,7 @@
 
 What follows is a semi-thorough description of the thought process behind the concoction of the *Local Weather App*. 
 
-If you are just interested in result, check out this [pen](https://codepen.io/borntofrappe/full/MQaOJV) for a live demo. 
+If you are just interested in results, check out this [pen](https://codepen.io/borntofrappe/full/MQaOJV) for a live demo. 
 
 ---
 
