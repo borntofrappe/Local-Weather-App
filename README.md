@@ -1,5 +1,13 @@
 # Local-Weather-App
 
+## Live Example 
+
+What follows is a semi-thorough description of the thought process behind the concoction of the *Local Weather App*. 
+
+If you are just interested in result, check out this [pen](https://codepen.io/borntofrappe/full/MQaOJV) for a live demo. 
+
+---
+
 ## The Task
 
 Broadly speaking the goal is to build a *Local Weather App*, following [freecodecamp](https://www.freecodecamp.org/) line of challenges "Intermediate Front End Web Development Projects".
