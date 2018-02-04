@@ -113,7 +113,7 @@ function displayBackground() {
       break;
     case "clouds":
       $("body")
-          .css("background-image", "url(" + arrayOfBackground[4] + ")");
+          .css("background-image", "url(" + arrayOfBackground[1] + ")");
       break;
     case "drizzle":
     case "rain":
